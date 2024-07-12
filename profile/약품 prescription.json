@@ -1,0 +1,38 @@
+{
+    "resourceType": "MedicationRequest",
+    "status": "completed",
+    "intent": "order",
+    "identifier": [
+        {
+            "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+            "value": "/$table/prescription/59"
+        }
+    ],
+    "subject": {
+        "display": "self"
+    },
+    "authoredOn": "2024-07-10T00:00:00+09:00",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "8806406000208",
+                "display": "개비스콘페퍼민트현탁액"
+            }
+        ],
+        "text": "개비스콘페퍼민트현탁액"
+    },
+    "dosageInstruction": [
+        {
+            "timing": {
+                "repeat": {
+                    "duration": 3,
+                    "durationUnit": "d",
+                    "frequency": 1,
+                    "period": 1,
+                    "periodUnit": "d"
+                }
+            }
+        }
+    ]
+}

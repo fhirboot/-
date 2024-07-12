@@ -1,0 +1,120 @@
+{
+    "resourceType": "Observation",
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "257733005:370130000=410656007",
+                "display": "Activities where Property = Type"
+            }
+        ],
+        "text": "활동(종류)"
+    },
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "https://developers.google.com/android/reference/com/google/android/gms/fitness/FitnessActivities",
+                "code": "OTHER",
+                "display": "The user is performing a generic fitness activity, which isn't classified."
+            }
+        ],
+        "text": "알 수 없음"
+    },
+    "subject": {
+        "reference": "Patient/0x8945205d4ae922967b0309f559779251bd3cdf16"
+    },
+    "effectiveDateTime": "2023-06-21T00:00:00+09:00",
+    "issued": "2023-06-22T07:58:54+09:00",
+    "device": {
+        "display": "{Samsung}SM-R920"
+    },
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "257733005:370130000=762636008",
+                        "display": "Activities where Property = Duration (property)"
+                    }
+                ],
+                "text": "운동 시간"
+            },
+            "valueQuantity": {
+                "value": 45.0,
+                "unit": "minutes",
+                "system": "http://unitsofmeasure.org",
+                "code": "min"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "257733005:370130000=789769008",
+                        "display": "Activities where Property = Energy rate"
+                    }
+                ],
+                "text": "칼로리소모량"
+            },
+            "valueQuantity": {
+                "value": 240.0,
+                "unit": "kcal",
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "364075005",
+                        "display": "Heart rate"
+                    }
+                ],
+                "text": "활동 심박수"
+            },
+            "valueQuantity": {
+                "value": 80.0,
+                "unit": "{beats}/min",
+                "system": "http://unitsofmeasure.org",
+                "code": "{beats}/min",
+                "extension": [
+                    {
+                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-max",
+                        "valueString": "80"
+                    },
+                    {
+                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-min",
+                        "valueString": "72"
+                    },
+                    {
+                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-mean",
+                        "valueString": "76"
+                    }
+                ]
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "257733005:370130000=118553007",
+                        "display": "Activities where Property = NRTO"
+                    }
+                ],
+                "text": "걸음 수"
+            },
+            "valueQuantity": {
+                "value": 8000.0,
+                "unit": "{count}",
+                "system": "http://unitsofmeasure.org",
+                "code": "{count}"
+            }
+        }
+    ]
+}

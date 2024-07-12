@@ -1,0 +1,104 @@
+{
+    "resourceType": "Observation",
+    "identifier": [
+        {
+            "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+            "value": "/$table/Nutrition/12"
+        }
+    ],
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "271905007:704321009=225388007",
+                "display": "History interpretations where Characterizes = Dietary intake assessment"
+            }
+        ],
+        "text": "영양기록(Nutrition)"
+    },
+    "subject": {
+        "display": "self"
+    },
+    "effectiveDateTime": "2024-07-10T00:00:00+09:00",
+    "issued": "2024-07-10T22:12:00+09:00",
+    "performer": [
+        {
+            "display": "self"
+        }
+    ],
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "787787004",
+                        "display": "Calorie intake"
+                    }
+                ],
+                "text": "총 칼로리(Calories)"
+            },
+            "valueQuantity": {
+                "value": 96.00,
+                "unit": "kcal",
+                "system": "http://unitsofmeasure.org",
+                "code": "kcal"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "226320007:704324001=2331003",
+                        "display": "Nutrient intake where Process output = Carbohydrate"
+                    }
+                ],
+                "text": "탄수화물(Carbohydrate)"
+            },
+            "valueQuantity": {
+                "value": 24.00,
+                "unit": "g",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "226320007:704324001=88878007",
+                        "display": "Nutrient intake where Process output = Protein"
+                    }
+                ],
+                "text": "단백질(Protein)"
+            },
+            "valueQuantity": {
+                "value": 0.00,
+                "unit": "g",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "226320007:704324001=226887002",
+                        "display": "Nutrient intake where Process output = Fat and oil"
+                    }
+                ],
+                "text": "지방(Total Fat)"
+            },
+            "valueQuantity": {
+                "value": 0.00,
+                "unit": "g",
+                "system": "http://unitsofmeasure.org",
+                "code": "g"
+            }
+        }
+    ]
+}

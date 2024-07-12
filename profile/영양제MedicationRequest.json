@@ -1,0 +1,27 @@
+{
+    "resourceType": "MedicationAdministration",
+    "status": "completed",
+    "subject": {
+        "display": "홍길동"
+    },
+    "medication": {
+        "concept": {
+            "text": "종합비타민"
+        }
+    },
+    "occurenceDateTime":"2024-12-12",
+    "dosage":{
+        "route":{
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route"
+                }
+            ],
+            "text": "경구복용"
+        },
+        "rateQuantity":3
+        }
+    
+}

@@ -1,0 +1,25 @@
+{
+    "resourceType": "Observation",
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258158006:370130000=762636008",
+                "display": "Sleep where Property = Duration (property)"
+            }
+        ],
+        "text": "수면"
+    },
+    "valueQuantity": {
+        "value": 45.0,
+        "unit": "minutes",
+        "system": "http://unitsofmeasure.org",
+        "code": "min"
+    },
+    "subject": {
+        "display": "self"
+    },
+    "effectiveDateTime": "2023-06-21T00:00:00+09:00",
+    "issued": "2023-06-22T07:58:54+09:00"
+}

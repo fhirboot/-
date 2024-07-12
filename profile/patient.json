@@ -1,0 +1,13 @@
+{
+    "resourceType":"Patient",
+    "id":"0x8945205d4ae922967b0309f559779251bd3cdf16",
+    "identifier": [{
+    "system":"urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+    "value":"/$table/SleepingBeauty1959"
+    }],
+    "gender":"female",
+    "birthDate":"1999-07",
+    "address": [{
+    "text":"전라남도 해남군"
+    }]
+    }

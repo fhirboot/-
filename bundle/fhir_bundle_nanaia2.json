@@ -1,0 +1,899 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/patient1",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "0x8945205d4ae922967b0309f559779251bd3cdf16",
+                "identifier": [
+                    {
+                        "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+                        "value": "/$table/SleepingBeauty1959"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1999-07",
+                "address": [
+                    {
+                        "text": "전라남도 해남군"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "request": "Patient"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/21",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "257733005:370130000=410656007",
+                                "display": "Activities where Property = Type"
+                            }
+                        ],
+                        "text": "활동(종류)"
+                    },
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "https://developers.google.com/android/reference/com/google/android/gms/fitness/FitnessActivities",
+                                "code": "OTHER",
+                                "display": "The user is performing a generic fitness activity, which isn't classified."
+                            }
+                        ],
+                        "text": "알 수 없음"
+                    },
+                    "subject": {
+                        "reference": "Patient/0x8945205d4ae922967b0309f559779251bd3cdf16"
+                    },
+                    "effectiveDateTime": "2023-02-08",
+                    "issued": "2023-06-22T07:58:54+09:00",
+                    "device": {
+                        "display": "{Samsung}SM-R920"
+                    },
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=762636008",
+                                        "display": "Activities where Property = Duration (property)"
+                                    }
+                                ],
+                                "text": "운동 시간"
+                            },
+                            "valueQuantity": {
+                                "value": "58",
+                                "unit": "minutes",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "min"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=789769008",
+                                        "display": "Activities where Property = Energy rate"
+                                    }
+                                ],
+                                "text": "칼로리소모량"
+                            },
+                            "valueQuantity": {
+                                "value": "290",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "364075005",
+                                        "display": "Heart rate"
+                                    }
+                                ],
+                                "text": "활동 심박수"
+                            },
+                            "valueQuantity": {
+                                "value": "105",
+                                "unit": "{beats}/min",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{beats}/min",
+                                "extension": [
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-max",
+                                        "valueString": "130"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-min",
+                                        "valueString": "79"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-mean",
+                                        "valueString": "105"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=118553007",
+                                        "display": "Activities where Property = NRTO"
+                                    }
+                                ],
+                                "text": "걸음 수"
+                            },
+                            "valueQuantity": {
+                                "value": "5968",
+                                "unit": "{count}",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{count}"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/22",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "identifier": [
+                        {
+                            "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+                            "value": "/$table/Nutrition/12"
+                        }
+                    ],
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "271905007:704321009=225388007",
+                                "display": "History interpretations where Characterizes = Dietary intake assessment"
+                            }
+                        ],
+                        "text": "영양기록(Nutrition)"
+                    },
+                    "subject": {
+                        "display": "self"
+                    },
+                    "effectiveDateTime": "2024-07-10T00:00:00+09:00",
+                    "issued": "2024-07-10T22:12:00+09:00",
+                    "performer": [
+                        {
+                            "display": "self"
+                        }
+                    ],
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "787787004",
+                                        "display": "Calorie intake"
+                                    }
+                                ],
+                                "text": "총 칼로리(Calories)"
+                            },
+                            "valueQuantity": {
+                                "value": "1288",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=2331003",
+                                        "display": "Nutrient intake where Process output = Carbohydrate"
+                                    }
+                                ],
+                                "text": "탄수화물(Carbohydrate)"
+                            },
+                            "valueQuantity": {
+                                "value": "192.1",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=88878007",
+                                        "display": "Nutrient intake where Process output = Protein"
+                                    }
+                                ],
+                                "text": "단백질(Protein)"
+                            },
+                            "valueQuantity": {
+                                "value": "54.9",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=226887002",
+                                        "display": "Nutrient intake where Process output = Fat and oil"
+                                    }
+                                ],
+                                "text": "지방(Total Fat)"
+                            },
+                            "valueQuantity": {
+                                "value": "36.9",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        }
+                    ],
+                    "occurrenceDateTime": "2023-02-08"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/23",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "258158006:370130000=762636008",
+                                "display": "Sleep where Property = Duration (property)"
+                            }
+                        ],
+                        "text": "수면"
+                    },
+                    "valueQuantity": {
+                        "value": "436",
+                        "unit": "minutes",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "min"
+                    },
+                    "subject": {
+                        "display": "self"
+                    },
+                    "effectiveDateTime": "2023-06-21T00:00:00+09:00",
+                    "issued": "2023-06-22T07:58:54+09:00"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/24",
+            "resource": [
+                {
+                    "resourceType": "MedicationAdministration",
+                    "status": "completed",
+                    "subject": {
+                        "display": "홍길동"
+                    },
+                    "medication": {
+                        "concept": {
+                            "text": "종합비타민"
+                        }
+                    },
+                    "occurenceDateTime": "2024-12-12",
+                    "dosage": {
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral route"
+                                }
+                            ],
+                            "text": "경구복용"
+                        },
+                        "rateQuantity": "3"
+                    },
+                    "occurrenceDateTime": "2023-02-08"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "MedicationAdministration"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/25",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "257733005:370130000=410656007",
+                                "display": "Activities where Property = Type"
+                            }
+                        ],
+                        "text": "활동(종류)"
+                    },
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "https://developers.google.com/android/reference/com/google/android/gms/fitness/FitnessActivities",
+                                "code": "OTHER",
+                                "display": "The user is performing a generic fitness activity, which isn't classified."
+                            }
+                        ],
+                        "text": "알 수 없음"
+                    },
+                    "subject": {
+                        "reference": "Patient/0x8945205d4ae922967b0309f559779251bd3cdf16"
+                    },
+                    "effectiveDateTime": "2023-02-09",
+                    "issued": "2023-06-22T07:58:54+09:00",
+                    "device": {
+                        "display": "{Samsung}SM-R920"
+                    },
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=762636008",
+                                        "display": "Activities where Property = Duration (property)"
+                                    }
+                                ],
+                                "text": "운동 시간"
+                            },
+                            "valueQuantity": {
+                                "value": "75",
+                                "unit": "minutes",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "min"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=789769008",
+                                        "display": "Activities where Property = Energy rate"
+                                    }
+                                ],
+                                "text": "칼로리소모량"
+                            },
+                            "valueQuantity": {
+                                "value": "375",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "364075005",
+                                        "display": "Heart rate"
+                                    }
+                                ],
+                                "text": "활동 심박수"
+                            },
+                            "valueQuantity": {
+                                "value": "110",
+                                "unit": "{beats}/min",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{beats}/min",
+                                "extension": [
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-max",
+                                        "valueString": "135"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-min",
+                                        "valueString": "85"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-mean",
+                                        "valueString": "110"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=118553007",
+                                        "display": "Activities where Property = NRTO"
+                                    }
+                                ],
+                                "text": "걸음 수"
+                            },
+                            "valueQuantity": {
+                                "value": "6809",
+                                "unit": "{count}",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{count}"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/26",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "identifier": [
+                        {
+                            "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+                            "value": "/$table/Nutrition/12"
+                        }
+                    ],
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "271905007:704321009=225388007",
+                                "display": "History interpretations where Characterizes = Dietary intake assessment"
+                            }
+                        ],
+                        "text": "영양기록(Nutrition)"
+                    },
+                    "subject": {
+                        "display": "self"
+                    },
+                    "effectiveDateTime": "2024-07-10T00:00:00+09:00",
+                    "issued": "2024-07-10T22:12:00+09:00",
+                    "performer": [
+                        {
+                            "display": "self"
+                        }
+                    ],
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "787787004",
+                                        "display": "Calorie intake"
+                                    }
+                                ],
+                                "text": "총 칼로리(Calories)"
+                            },
+                            "valueQuantity": {
+                                "value": "1365",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=2331003",
+                                        "display": "Nutrient intake where Process output = Carbohydrate"
+                                    }
+                                ],
+                                "text": "탄수화물(Carbohydrate)"
+                            },
+                            "valueQuantity": {
+                                "value": "190.7",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=88878007",
+                                        "display": "Nutrient intake where Process output = Protein"
+                                    }
+                                ],
+                                "text": "단백질(Protein)"
+                            },
+                            "valueQuantity": {
+                                "value": "49.9",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=226887002",
+                                        "display": "Nutrient intake where Process output = Fat and oil"
+                                    }
+                                ],
+                                "text": "지방(Total Fat)"
+                            },
+                            "valueQuantity": {
+                                "value": "41.2",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        }
+                    ],
+                    "occurrenceDateTime": "2023-02-09"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/27",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "258158006:370130000=762636008",
+                                "display": "Sleep where Property = Duration (property)"
+                            }
+                        ],
+                        "text": "수면"
+                    },
+                    "valueQuantity": {
+                        "value": "422",
+                        "unit": "minutes",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "min"
+                    },
+                    "subject": {
+                        "display": "self"
+                    },
+                    "effectiveDateTime": "2023-06-21T00:00:00+09:00",
+                    "issued": "2023-06-22T07:58:54+09:00"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/28",
+            "resource": [
+                {
+                    "resourceType": "MedicationAdministration",
+                    "status": "completed",
+                    "subject": {
+                        "display": "홍길동"
+                    },
+                    "medication": {
+                        "concept": {
+                            "text": "종합비타민"
+                        }
+                    },
+                    "occurenceDateTime": "2024-12-12",
+                    "dosage": {
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral route"
+                                }
+                            ],
+                            "text": "경구복용"
+                        },
+                        "rateQuantity": "4"
+                    },
+                    "occurrenceDateTime": "2023-02-09"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "MedicationAdministration"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/29",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "257733005:370130000=410656007",
+                                "display": "Activities where Property = Type"
+                            }
+                        ],
+                        "text": "활동(종류)"
+                    },
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "https://developers.google.com/android/reference/com/google/android/gms/fitness/FitnessActivities",
+                                "code": "OTHER",
+                                "display": "The user is performing a generic fitness activity, which isn't classified."
+                            }
+                        ],
+                        "text": "알 수 없음"
+                    },
+                    "subject": {
+                        "reference": "Patient/0x8945205d4ae922967b0309f559779251bd3cdf16"
+                    },
+                    "effectiveDateTime": "2023-02-10",
+                    "issued": "2023-06-22T07:58:54+09:00",
+                    "device": {
+                        "display": "{Samsung}SM-R920"
+                    },
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=762636008",
+                                        "display": "Activities where Property = Duration (property)"
+                                    }
+                                ],
+                                "text": "운동 시간"
+                            },
+                            "valueQuantity": {
+                                "value": "50",
+                                "unit": "minutes",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "min"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=789769008",
+                                        "display": "Activities where Property = Energy rate"
+                                    }
+                                ],
+                                "text": "칼로리소모량"
+                            },
+                            "valueQuantity": {
+                                "value": "300",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "364075005",
+                                        "display": "Heart rate"
+                                    }
+                                ],
+                                "text": "활동 심박수"
+                            },
+                            "valueQuantity": {
+                                "value": "112",
+                                "unit": "{beats}/min",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{beats}/min",
+                                "extension": [
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-max",
+                                        "valueString": "162"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-min",
+                                        "valueString": "62"
+                                    },
+                                    {
+                                        "url": "http://step.snu.ac.kr/fhir/StructureDefinition/Value-mean",
+                                        "valueString": "112"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "257733005:370130000=118553007",
+                                        "display": "Activities where Property = NRTO"
+                                    }
+                                ],
+                                "text": "걸음 수"
+                            },
+                            "valueQuantity": {
+                                "value": "8886",
+                                "unit": "{count}",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{count}"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        },
+        {
+            "fullurl": "https://fhir-bootcamp.shinyapps.io/Narnia/30",
+            "resource": [
+                {
+                    "resourceType": "Observation",
+                    "identifier": [
+                        {
+                            "system": "urn:uuid:5877177b-359e-42c9-8730-61a61d77e07b",
+                            "value": "/$table/Nutrition/12"
+                        }
+                    ],
+                    "status": "final",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "271905007:704321009=225388007",
+                                "display": "History interpretations where Characterizes = Dietary intake assessment"
+                            }
+                        ],
+                        "text": "영양기록(Nutrition)"
+                    },
+                    "subject": {
+                        "display": "self"
+                    },
+                    "effectiveDateTime": "2024-07-10T00:00:00+09:00",
+                    "issued": "2024-07-10T22:12:00+09:00",
+                    "performer": [
+                        {
+                            "display": "self"
+                        }
+                    ],
+                    "component": [
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "787787004",
+                                        "display": "Calorie intake"
+                                    }
+                                ],
+                                "text": "총 칼로리(Calories)"
+                            },
+                            "valueQuantity": {
+                                "value": "1225",
+                                "unit": "kcal",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "kcal"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=2331003",
+                                        "display": "Nutrient intake where Process output = Carbohydrate"
+                                    }
+                                ],
+                                "text": "탄수화물(Carbohydrate)"
+                            },
+                            "valueQuantity": {
+                                "value": "173.3",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=88878007",
+                                        "display": "Nutrient intake where Process output = Protein"
+                                    }
+                                ],
+                                "text": "단백질(Protein)"
+                            },
+                            "valueQuantity": {
+                                "value": "56.4",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        },
+                        {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "226320007:704324001=226887002",
+                                        "display": "Nutrient intake where Process output = Fat and oil"
+                                    }
+                                ],
+                                "text": "지방(Total Fat)"
+                            },
+                            "valueQuantity": {
+                                "value": "27.6",
+                                "unit": "g",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "g"
+                            }
+                        }
+                    ],
+                    "occurrenceDateTime": "2023-02-10"
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "request": "Observation"
+            }
+        }
+    ]
+}
