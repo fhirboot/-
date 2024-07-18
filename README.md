@@ -29,7 +29,7 @@
 
 #### Data Output (출력)
 - 본 앱을 통해 생성된 연대기별 데이터는 **Excel 형태**나 **FHIR 서버로 전송**할 수 있습니다.
-- FHIR로 전송은 **Python**으로 작성되어 있으며, 본인의 PC에 설치된 Python이 있어야만 작동합니다.
+- FHIR로 전송은 **Python**으로 작성되어 있으며, 본인의 PC에 설치된 Python이 있어야만 작동합니다. **(bundle_maker.py)**
 - FHIR의 destination은 Python 코드를 수정하여 사용해야 합니다.
 - FHIR의 IG의 경우, PGHD를 표현하기 위해 step.snu.ac.kr을 참조하여 작성되었습니다.
 
