@@ -1,5 +1,5 @@
-<!-- 타이틀 부분 -->
 ### 나니아 연대기
+
 ---
 
 <img src="https://github.com/user-attachments/assets/2902f545-5416-4f83-9740-f677609ad756" alt="Narnia Chronology" style="width:100%; height:auto;" />
@@ -7,6 +7,7 @@
 <br>
 
 ### 앱 설명
+
 ---
 
 **나니아 연대기**는 질병 발생 타임라인에 맞춰 나의 건강상태 추이를 확인할 수 있는 어플리케이션입니다. 이 앱은 2024년 7월 10일부터 12일까지 실시된 FHIR 활용 부트캠프를 통해 설계되었습니다.
@@ -24,8 +25,8 @@
 
 #### 나니아 연대기 앱
 - 본 폴더의 **app과 css 파일**을 이용하여 본인의 환경에서도 구동 가능합니다. 자신의 Google Sheet 주소로 변경하고, 데이터 변수명을 맞추면 자신의 데이터로도 사용할 수 있습니다.
-- [앱 링크][(https://fhir-bootcamp.shinyapps.io/Narnia/)]
-- FHIR로 데이터를 출력(보내는경우)하는 경우, 내부 시스템으로 돌아가야해서 따로 python코드로 작동해야함
+- [앱 링크](https://fhir-bootcamp.shinyapps.io/Narnia/)
+- FHIR로 데이터를 출력(보내는 경우)하는 경우, 내부 시스템으로 돌아가야 해서 따로 Python 코드로 작동해야 합니다.
 
 #### Data Output (출력)
 - 본 앱을 통해 생성된 연대기별 데이터는 **Excel 형태**나 **FHIR 서버로 전송**할 수 있습니다.
